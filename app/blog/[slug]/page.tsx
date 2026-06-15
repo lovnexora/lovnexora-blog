@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { blogPosts } from '../page';
+import { blogPosts } from '../posts';
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
